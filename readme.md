@@ -2,19 +2,13 @@
 
 
 ## Índice
+- [O Projeto](#the-project)
+- [Membros](#membros)
+- [Imagens](#screenshot)
+- [Links](#links)
+- [Tecnologia](#tecnologias-e-recursos)
 
-- [Visão Geral](#visaogeral)
-  - [O Projeto](#the-project)
-  - [Imagens](#screenshot)
-  - [Links](#links)
-- [Process](#my-process)
-  - [Built with](#built-with)
-
-
-
-## Visão Geral
-
-### O Projeto
+## O Projeto
 
 Projeto final da primeira etapa do módulo full-stack do bootcamp Atlântico Avanti. Um site de portfólio contendo projetos e atuação como desenvolvedor full-stack.
 
@@ -39,7 +33,7 @@ Projeto final da primeira etapa do módulo full-stack do bootcamp Atlântico Ava
 
 
 
-### Tecnologias e recursos
+### Tecnologias e Recursos
 
 - HTML5 semântico
 - Flexbox e Grid
