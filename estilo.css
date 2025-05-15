@@ -1,0 +1,188 @@
+/* =================================
+   VARIÁVEIS GLOBAIS (GUIA DE ESTILO)
+   ================================= */
+:root {
+    --cor-branco: #ffffff;
+    --cor-cinza-claro: #ebebeb;
+    --cor-azul-claro: #00accc;
+    --cor-azul-escuro: #002b33;
+    --cor-grafite: #151515;
+    --max-width-desktop: 90rem;
+    /* 1440px */
+    --max-width-mobile: 22.5rem;
+    /* 360px */
+}
+
+/* ==============
+     RESET BÁSICO
+     ============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ====================
+     BODY & CONTAINER
+     ==================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-grafite);
+    background: var(--cor-branco);
+    max-width: var(--max-width-desktop);
+    margin: auto;
+    padding: 1rem;
+}
+
+/* ============
+     TÍTULOS
+     ============ */
+.portfolio-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--cor-azul-escuro);
+    margin-bottom: 1rem;
+}
+
+/* =====================
+     GALERIA (GRID SIMPLES)
+     ===================== */
+#portfolio-gallery {
+    background: var(--cor-cinza-claro);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.portfolio-gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--cor-grafite);
+}
+
+/* ============================
+     SEÇÃO DE HABILIDADES
+     ============================ */
+#portfolio-skills {
+    background: var(--cor-azul-escuro);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    color: var(--cor-branco);
+}
+
+/* container flex para dois blocos */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+/* bloco de destaque (esquerda) */
+.skills-highlight {
+    flex: 1 1 280px;
+    background: var(--cor-cinza-claro);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* título no destaque */
+.skills-highlight .portfolio-title {
+    color: var(--cor-azul-escuro);
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* lista de habilidades (direita) */
+.portfolio-skills-list {
+    flex: 2 1 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.portfolio-skill .skill-name {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    background: var(--cor-cinza-claro);
+    height: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    line-height: 1rem;
+    text-align: right;
+    padding-right: 0.5rem;
+    font-weight: 700;
+    color: var(--cor-branco);
+    transition: width 1s ease;
+}
+
+/* cores e larguras */
+.skill-fill.html {
+    width: 90%;
+    background: var(--cor-azul-claro);
+}
+
+.skill-fill.css {
+    width: 74%;
+    background: #008fa1;
+}
+
+.skill-fill.js {
+    width: 65%;
+    background: #006e7a;
+}
+
+.skill-fill.python {
+    width: 54%;
+    background: #00525a;
+}
+
+.skill-fill.react {
+    width: 42%;
+    background: #00383f;
+}
+
+/* =====================
+     RESPONSIVIDADE MOBILE
+     ===================== */
+@media (max-width: var(--max-width-mobile)) {
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-highlight,
+    .portfolio-skills-list {
+        flex: 1 1 auto;
+    }
+}
