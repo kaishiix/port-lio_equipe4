@@ -7,3 +7,177 @@
   font-family: "roboto";
 }
 
+:root {
+  --branco: #ffffff;
+  --cinzaclaro: #ebebeb;
+  --azulclaro: #00accc;
+  --azulescuro: #002b33;
+  --cinzagrafite: #151515;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.intro {
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--azulescuro);
+}
+
+.background {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-portfolio {
+  color: var(--azulclaro);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 200px;
+}
+
+.text-autor {
+  color: var(--branco);
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.text-job {
+  font-weight: 200;
+  color: var(--branco);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1rem;
+}
+
+.testemunhos {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cinzaclaro);
+  padding: 30px 30px 45px;
+}
+
+.testemunhos-headline {
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--azulescuro);
+  margin-bottom: 45px;
+}
+
+.carousel-container {
+  max-width: 70rem; /* Largura dos cards contidos no carousel */
+  overflow: hidden;
+  position: relative;
+  /* padding: 0 20px; */
+}
+
+.cards-flex {
+  display: flex;
+  width: 300%; 
+  transition: transform .5s ease-in-out;
+  gap: 20px; 
+}
+
+.card-item {
+  position: relative;
+  flex: calc(33.3333% - 14px); /* Nada ocorre quando se altera */
+  width: 20rem;
+  height: 20rem;
+  border: solid var(--azulescuro) 2px;
+  box-shadow: 0 0 3px var(--cinzagrafite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.carousel-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.carousel-btn {
+  background-color: var(--azulescuro);
+  color: var(--branco);
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  transition: background-color .3s ease;
+}
+
+.carousel-btn:hover, .carousel-btn.active {
+  background-color: var(--azulclaro);
+}
+
+.card-item-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-item-paragraph {
+  color: var(--cinzagrafite);
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.card-item-name {
+  font-weight: bold;
+  color: var(--azulescuro);
+}
+
+.card-item-job {
+  font-size: .9rem;
+  opacity: .8;
+}
+
+.card-item-aspas {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--azulescuro);
+  width: 40px;
+  height: 40px;
+  top: 0px;
+  left: 30px;
+}
+
+
+
+.card-item-aspas-texto {
+  color: var(--branco);
+  font-size: 4rem;
+  font-weight: bold;
+  transform: translateY(10px);
+}
+
+@media (max-width: 1200px) {
+  .cards-flex {
+    flex: 0 calc(50% - 10px);
+  }
+
+}
+
+@media (max-width: 780px) {
+  .cards-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
