@@ -1,0 +1,111 @@
+    #habilidades-portifolio {
+  background-color: #002b33; /* Fundo semelhante ao header */
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%; /* Largura da caixa */
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column; /* Empilha as habilidades */
+  align-items: center;
+}
+
+.skills-highlight, .portfolio-skills-list {
+  color: #ffffff;
+}
+
+.portfolio-title {
+    text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.portfolio-skill {
+  margin: 5px 0;
+  width: 700; /* Largura fixa e centralizada */
+  text-align: left;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.skill-bar {
+  background-color: #005577;
+  border-radius: 5px;
+  height: 25px;
+  margin: 5px 0;
+  position: relative;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: 5px;
+  text-align: right;
+  padding-right: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.html { background-color: #e34c26; width: 52%; }
+.css { background-color: #264de4; width: 23%; }
+.js { background-color: #f7df1e; color: #000; width: 10%; }
+.python { background-color: #3572A5; width: 10%; }
+.react { background-color: #61dafb; color: #000; width: 0%; }
+
+form {
+  background-color: #003d4d;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 50%; /* Centraliza horizontalmente */
+  text-align: left;
+}
+
+label {
+  display: block;
+  text-align: center; /* Centraliza os títulos */
+  margin: 8px 0;
+  color: #ffffff;
+}
+
+textarea, input[type="text"], input[type="submit"] {
+  display: block;
+  margin: 8px auto;
+  width: 90%; /* Aumenta a largura dos campos */
+  color: #ffffff;
+}
+
+textarea {
+  background-color: #005577;
+  border: none;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  background-color: #005577;
+  border: none;
+  padding: 8px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #008899;
+  border: none;
+  padding: 10px;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00a3b3;
+}

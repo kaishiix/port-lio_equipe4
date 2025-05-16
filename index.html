@@ -3,72 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+  <title>Portifolio Pessoal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style-aprendizado.css">
   
-  <title>Aprendizado</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Cabeçalho -->
-  <div class="cabecalho" id="cabecalho">
-    <h2 class="cabecalho-titulo">Aprendizado</h2>
-  </div>
 
-  <div class="container">
-    <!-- Tecnologias Aprendidas -->
-    <section>
-      <h2>Tecnologias Aprendidas</h2>
-      <div class="lista-tecnologias">
-        <div class="lista-item">HTML</div>
-        <div class="lista-item">Flex-Box</div>
-        <div class="lista-item">Grid</div>
-        <div class="lista-item">Git</div>
-        <div class="lista-item">GitHub</div>
-      </div>
-    </section>
-
-    <!-- Dicas -->
-    <section>
-      <h2>Dicas Gerais para Desenvolvedores</h2>
+  <!--import das outras páginas html-->
+  <header id="header">
+    <nav>
       <ul>
-        <li>Usar nomenclaturas como padrão para nomear arquivos e propriedades em geral, como é o caso do kebab-case e do camelCase.</li>
-        <li>Sempre se manter atualizado para possíveis mudanças na documentação oficial das tecnologias trabalhadas.</li>
-        <li>Escreva um código limpo que seja legível e bem descritivo.</li>
-        <li>Utilizar controle de versão Git.</li>
-        <li>Gerencie seu tempo para que não fique muito tempo preso em um mesmo problema. Uma boa prática é usar a técnica Pomodoro.</li>
-        <li>Faça projetos pessoais.</li>
-        <li>Estudar as tecnologias mais atuais e requisitadas no mercado.</li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="aprendizado.html">Aprendizados</a></li>
+        <li><a href="depoimentos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
-    </section>
+    </nav>
+  </header>
 
-    <!-- Trechos de Código -->
-    <section>
-      <h2>Trechos de Código</h2>
+  <container id="corpo-texto">
+    <!--introdução-->
+  <section id="introducao"> <!--aprensentação pessoal-->
+    <h1><span>Lucas Viana</span> - Estudante de Desenvolvimento Full Stack</h1> <!--nome e profissão-->
+    <p>Olá, sou estudante de Desenvolvimento Full Stack,
+      meu objetivo é me tornar um bom Desenvolvedor no mercado de trabalho e seguir meu sonho de ser programador
+    </p> <!--breve descrição sobre você-->
+  </section>
 
-      <h3>Comandos Git Básicos</h3>
-      <pre><code>git init
-git add .
-git status
-git commit -m "Primeiro commit"
-git log
-git clone + URL
-git config --global user.email
-git config --global user.name</code></pre>
+  <!--histórico-->
+  <section id="historico"> <!--histórico profissional e academico-->
+    <h2>Histórico</h2> <!--titulo da seção-->
+    <h3>Ánalise e Desenvolvimento de Sistemas - <i>UNIP</i></h3>
+    <p>2023 - Presente</p> <!--breve resumo-->
+    <h3>Desenvolvimento Fullstack - <i>Capacita Brasil</i></h3>
+    <p>2025 - Presente</p> <!--breve resumo-->
+  </section>
 
-      <h3>Criar uma Ramificação</h3>
-      <pre><code>git checkout -b nome-da-branch
-git branch
-git merge nome-da-branch
-git push origin nome-da-branch</code></pre>
+  <!--interesses-->
+  <section id="interesses"> <!--interesses pessoais e profissionais-->
+    <h2>Interesses</h2> <!--titulo da seção-->
+    <ul> <!--lista de interesses-->
+      <li>Frameworks e Bibliotecas Populares</li>
+      <li>APIs e Integrações</li>
+      <li>Banco de Dados Relacionais e Não Relacionais</li>
+      <li>Segurança de Aplicações</li>
+      <li>DevOps e Deploy Contínuo</li>
+    </ul>
+  </section>
+  </container>
 
-      <h3>Enviar Projeto para o GitHub</h3>
-      <pre><code>git remote add origin URL
-git push -u origin main</code></pre>
-    </section>
-  </div>
+  <!--redes sociais-->
+  <footer id="footer-redes_sociais"> <!--rodapé do site--> <!--links para linkedIn, GitHub...-->
+    <a href="https://wa.link/hn08sg" target="_blank">
+      <img src="https://i.postimg.cc/bYL77sYK/Pngtree-whatsapp-icon-8704827.png" alt="WhatsApp" width="40" height="40" />
 
+      <a href="https://www.linkedin.com/in/lucas-viana-6264b82a8/" target="_blank">
+        <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png"
+            alt="LinkedIn" width="40" height="40" />
+
+      <a href="https://github.com/Lucas190118" target="_blank">
+        <img src="https://i.postimg.cc/nz33P9K2/placa-do-github.png" alt="GitHub" width="40" height="40" />
+  </footer>
 
 </body>
 </html>
