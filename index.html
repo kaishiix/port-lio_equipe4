@@ -4,18 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/10259/10259833.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Portfólio</title>
 </head>
 <body>
-  <main class="intro">
-    <div class="background">
-      <h2 class="text-portfolio">Portfolio</h2>
-      <h1 class="text-autor">Jullyan Gomes</h1>
-      <h2 class="text-job">Full-stack Developer</h2>
-    </div>
-  </main>
+  <header id="header">
+    <nav>
+      <ul>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="aprendizado.html">Aprendizados</a></li>
+        <li><a href="depoimentos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <container id="corpo-texto">
+  <section id="introducao"> <!--aprensentação pessoal-->
+    <h1><span>Lucas Viana</span> - Estudante de Desenvolvimento Full Stack</h1> <!--nome e profissão-->
+    <p>Olá, sou estudante de Desenvolvimento Full Stack,
+      meu objetivo é me tornar um bom Desenvolvedor no mercado de trabalho e seguir meu sonho de ser programador
+    </p> <!--breve descrição sobre você-->
+  </section>
+   <section id="historico"> <!--histórico profissional e academico-->
+    <h2>Histórico</h2> <!--titulo da seção-->
+    <h3>Ánalise e Desenvolvimento de Sistemas - <i>UNIP</i></h3>
+    <p>2023 - Presente</p> <!--breve resumo-->
+    <h3>Desenvolvimento Fullstack - <i>Capacita Brasil</i></h3>
+    <p>2025 - Presente</p> <!--breve resumo-->
+  </section>
+   <section id="interesses"> <!--interesses pessoais e profissionais-->
+    <h2>Interesses</h2> <!--titulo da seção-->
+    <ul> <!--lista de interesses-->
+      <li>Frameworks e Bibliotecas Populares</li>
+      <li>APIs e Integrações</li>
+      <li>Banco de Dados Relacionais e Não Relacionais</li>
+      <li>Segurança de Aplicações</li>
+      <li>DevOps e Deploy Contínuo</li>
+    </ul>
+  </section>
   <section class="aprendizado">
   </section>
   <section class="testemunhos">
@@ -147,6 +176,19 @@
       </div>
     </div>
   </section>
+ </container>
+  <footer id="footer-redes_sociais"> <!--rodapé do site--> <!--links para linkedIn, GitHub...-->
+  <a href="https://wa.link/hn08sg" target="_blank">
+    <img src="https://i.postimg.cc/bYL77sYK/Pngtree-whatsapp-icon-8704827.png" alt="WhatsApp" width="40" height="40" />
+
+    <a href="https://www.linkedin.com/in/lucas-viana-6264b82a8/" target="_blank">
+      <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png"
+          alt="LinkedIn" width="40" height="40" />
+
+    <a href="https://github.com/Lucas190118" target="_blank">
+      <img src="https://i.postimg.cc/nz33P9K2/placa-do-github.png" alt="GitHub" width="40" height="40" />
+  </footer>
   <script src="scripts.js"></script>  
 </body>
 </html>

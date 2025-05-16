@@ -1,0 +1,56 @@
+ * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "roboto";
+}
+
+#galeria {
+  background-color: #002b33; /* Fundo semelhante ao header */
+  padding: 20px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  width: 50%; /* Largura da caixa */
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.titulo-portifolio {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+figure {
+  background-color: #005577; /* Cor mais clara para contraste */
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+figure:hover {
+  transform: scale(1.05); /* Aumenta levemente ao passar o mouse */
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+figcaption {
+  color: #ffffff;
+  margin-top: 8px;
+  font-size: 16px;
+}

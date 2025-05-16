@@ -1,0 +1,57 @@
+#contato {
+  background-color: #002b33; /* Cor de fundo do formulário */
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 20px auto; /* Centraliza na página */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: #ffffff; /* Cor do texto */
+}
+
+#contato h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+#contato p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+  width: 100%; /* Largura completa */
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #005577;
+  border-radius: 4px;
+  background-color: #003945;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  background-color: #005577;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #007799;
+}
+
+a img {
+  margin-top: 20px;
+}

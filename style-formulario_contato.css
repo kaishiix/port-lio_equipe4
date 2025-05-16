@@ -1,0 +1,112 @@
+/* Variáveis de cor */
+:root {
+  --white: #ffffff;
+  --light-gray: #ebebeb;
+  --light-blue: #00accc;
+  --dark-blue: #002b33;
+  --graphite-gray: #151515;
+}
+
+/* Estilo base */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light-gray);
+  color: var(--graphite-gray);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+form {
+  background-color: var(--white);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--dark-blue);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--light-blue);
+  padding-bottom: 0.5rem;
+}
+
+form p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: var(--graphite-gray);
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: 'Roboto', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--light-blue);
+  box-shadow: 0 0 4px var(--light-blue);
+}
+
+input[type="submit"],
+button {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: var(--light-blue);
+}
+
+.redesociais {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.redesociais img {
+  margin: 0 10px;
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.redesociais img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  form {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

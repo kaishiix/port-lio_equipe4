@@ -1,0 +1,175 @@
+
+  /* Variáveis CSS */
+:root {
+  --white: #ffffff;
+  --light-gray: #ebebeb;
+  --light-blue: #00accc;
+  --dark-blue: #002b33;
+  --graphite-gray: #151515;
+}
+
+/* Fonte e fundo */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--light-gray);
+  color: var(--graphite-gray);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove margem padrão do body e seções */
+section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.cabecalho-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: var(--white);
+}
+
+/* Títulos */
+h2 {
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid var(--light-blue);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+h3 {
+  color: var(--dark-blue);
+  font-size: 1.4rem;
+  margin: 1.5rem 0 1rem;
+}
+
+/* Listas */
+ul {
+  list-style-position: inside;
+  margin: 1.5rem 0 1rem;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+}
+
+/* Grid de Tecnologias */
+.lista-tecnologias {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.lista-item {
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lista-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lista-item::before {
+  display: none;
+}
+
+/* Código */
+pre {
+  background-color: var(--graphite-gray);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+code {
+  font-family: monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cabecalho-titulo {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .lista-tecnologias {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .lista-tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  pre {
+    padding: 1rem;
+  }
+}
