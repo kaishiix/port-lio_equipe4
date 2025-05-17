@@ -1,9 +1,113 @@
+/* Reset básico */
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
-  text-decoration: none;
-  list-style: none;
-  font-family: "roboto";
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: auto
+}
+
+/* Navegação */
+header {
+  background-color: #002b33;
+  padding: 15px 0;
+  margin-bottom: 40px;
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ebebeb;
+}
+
+/* Seções */
+
+section {
+  margin-bottom: 50px;
+}
+
+.introducao-texto h1 {
+  font-size: 2rem;
+  color: #002b33;
+  margin-bottom: 15px;
+}
+
+.introducao-texto p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  font-size: 15px;
+}
+
+/* Histórico */
+.historico-container h2,
+.interesses-container h2 {
+  color: 002b33;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #002b33;
+  padding-bottom: 6px;
+  max-width: fit-content;
+}
+
+.historico-lista,
+.interesses-lista {
+  list-style: disc inside;
+  color: #555;
+ 
+}
+
+.historico-lista li,
+.interesses-lista li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Rodapé */
+.rodape {
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+
+}
+
+.rodape-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rodape-link img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.rodape-link img:hover {
+  transform: scale(1.2);
+}
